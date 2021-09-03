@@ -43,29 +43,15 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        " Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "❓ How to use Me", callback_data="cbhowtouse")
+                        " How to use Me", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         "📚 Commands", callback_data="cbcmds"
-                    ),
-                    InlineKeyboardButton(
-                        "💝 Donate", url=f"https://t.me/{OWNER_NAME}")
-                ],[
-                    InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton(
-                        "🌐 Wiki's Page", url="https://github.com/levina-lab/veezmusic/wiki/Veez-Music-Wiki's")
-                ],[
-                    InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/levina-lab/VeezMusic"
+                         " Commands", callback_data="cbcmds"
                     )
+                   
                 ]
             ]
         ),
@@ -84,10 +70,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "  Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        " Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
@@ -106,7 +92,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="❔ HOW TO USE ME", callback_data=f"cbguide"
+                        text=" HOW TO USE ME", callback_data=f"cbguide"
                     )
                 ]
             ]
@@ -125,28 +111,28 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Basic Cmd", callback_data="cbbasic"
+                        " Basic Cmd", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "📕 Advanced Cmd", callback_data="cbadvanced"
+                        "Advanced Cmd", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📘 Admin Cmd", callback_data="cbadmin"
+                        " Admin Cmd", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "📗 Sudo Cmd", callback_data="cbsudo"
+                        " Sudo Cmd", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📙 Owner Cmd", callback_data="cbowner"
+                        " Owner Cmd", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        " Fun Cmd", callback_data="cbfun"
                     )
                 ]
             ]
