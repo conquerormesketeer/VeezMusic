@@ -21,29 +21,15 @@ async def cbstart(_, query: CallbackQuery):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "Add me to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "❓ How to use Me", callback_data="cbhowtouse")
+                        " How to use Me", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                         "📚 Commands", callback_data="cbcmds"
-                    ),
-                    InlineKeyboardButton(
-                        "💝 Donate", url=f"https://t.me/{OWNER_NAME}")
-                ],[
-                    InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton(
-                        "🌐 Wiki's Page", url="https://github.com/levina-lab/veezmusic/wiki/Veez-Music-Wiki's")
-                ],[
-                    InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/levina-lab/VeezMusic"
+                         " Commands", callback_data="cbcmds"
                     )
+                   
                 ]
             ]
         ),
@@ -63,33 +49,33 @@ async def cbhelp(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Basic Cmd", callback_data="cbbasic"
+                        " Basic Cmd", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "📕 Advanced Cmd", callback_data="cbadvanced"
+                         "Advanced Cmd", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📘 Admin Cmd", callback_data="cbadmin"
+                        " Admin Cmd", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "📗 Sudo Cmd", callback_data="cbsudo"
+                        " Sudo Cmd", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📙 Owner Cmd", callback_data="cbowner"
+                        " Owner Cmd", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        " Fun Cmd", callback_data="cbfun"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HELP", callback_data="cbguide"
+                       "Back ", callback_data="cbguide"
                     )
                 ]
             ]
@@ -130,7 +116,7 @@ async def cbbasic(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -154,7 +140,7 @@ async def cbadvanced(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -188,7 +174,7 @@ async def cbadmin(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        " Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -211,7 +197,7 @@ async def cbsudo(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        " Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -237,7 +223,7 @@ async def cbowner(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -261,7 +247,7 @@ async def cbfun(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        " Back", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -284,12 +270,12 @@ async def cbguide(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Command List", callback_data="cbhelp"
+                        " Command List", callback_data="cbhelp"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 Close", callback_data="close"
+                        " Close", callback_data="close"
                     )
                 ]
             ]
@@ -311,7 +297,7 @@ async def cbback(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "⏸ pause", callback_data="cbpause"
+                        " pause", callback_data="cbpause"
                     ),
                     InlineKeyboardButton(
                         "▶️ resume", callback_data="cbresume"
@@ -319,25 +305,25 @@ async def cbback(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "⏩ skip", callback_data="cbskip"
+                        "  skip", callback_data="cbskip"
                     ),
                     InlineKeyboardButton(
-                        "⏹ end", callback_data="cbend"
+                        "  end", callback_data="cbend"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⛔ anti cmd", callback_data="cbdelcmds"
+                        " anti cmd", callback_data="cbdelcmds"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🛄 group tools", callback_data="cbgtools"
+                        " group tools", callback_data="cbgtools"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 Close", callback_data="close"
+                        " Close", callback_data="close"
                     )
                 ]
             ]
@@ -375,7 +361,7 @@ and you can also set a time for the ban and mute penalties for members in your g
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 GO BACK", callback_data="cbback"
+                        " Back", callback_data="cbback"
                     )
                 ]
             ]
@@ -405,7 +391,7 @@ async def cbdelcmds(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 GO BACK", callback_data="cbback"
+                        "Back", callback_data="cbback"
                     )
                 ]
             ]
@@ -425,33 +411,33 @@ async def cbhelps(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Basic Cmd", callback_data="cbbasic"
+                        " Basic Cmd", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "📕 Advanced Cmd", callback_data="cbadvanced"
+                        " Advanced Cmd", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📘 Admin Cmd", callback_data="cbadmin"
+                        " Admin Cmd", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "📗 Sudo Cmd", callback_data="cbsudo"
+                        " Sudo Cmd", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📙 Owner Cmd", callback_data="cbowner"
+                        " Owner Cmd", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        " Fun Cmd", callback_data="cbfun"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HOME", callback_data="cbstart"
+                        " Back", callback_data="cbstart"
                     )
                 ]
             ]
@@ -474,7 +460,7 @@ async def cbguides(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HOME", callback_data="cbstart"
+                        " Back", callback_data="cbstart"
                     )
                 ]
             ]
